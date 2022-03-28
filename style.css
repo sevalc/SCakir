@@ -1,20 +1,56 @@
-
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#faf9f9ff;
+}
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
+    background-color: #bee3dbff;
 }
-
+header {
+    height:15vh;
+}
+main {
+    min-height: 85vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
 header h1 {
     text-align: left;
 }
-header h2 {
-    text-align: right;
-}
 header nav li {
-    /* li List items in navigation bar */
-    /* Sets display to inline */
-        display: inline-block;
-        margin-left: 25px;
+    display: inline-block;
+    margin-left: 25px;
+}
+header nav {
+    float: right;
+}
+div {
+    border:1px solid #555b6eff;
+    width:fit-content;
+    background-color: #ffd6baff; 
+
+}
+.About-Me {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#item1 {
+    border-right: 2px solid #555b6eff;
+    width:10%;
+    padding: 0 20px;
+    margin:20px 0;
+    display: flex;
+}
+#item2 {
+    width:80%;
+    padding: 0 20px;
+    margin:20px 0;
+    display: flex;
+
 }
 .work {
     display: flex;
@@ -22,13 +58,10 @@ header nav li {
     flex-direction: row;
     width: 100%;
     padding: 0 20px;
-    margin:15px 0;
+    margin:25px;
     border-left: 2px solid;
 }
 
-.Work header {
-    
-}
 .Box1 {
     border: 3px solid black;
     width: 90%;
@@ -39,5 +72,8 @@ header nav li {
     border: 3px solid black;
     width: 40%;
     padding: 0 20px;
-    margin:20px 0;
+    margin:40px;
 }
+
+
+
