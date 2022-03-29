@@ -13,9 +13,8 @@ header {
 }
 main {
     min-height: 85vh;
-    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 header h1 {
     text-align: left;
@@ -27,10 +26,15 @@ header nav li {
 header nav {
     float: right;
 }
-div {
+
+#Welcome-Container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Welcome {
     border:1px solid #555b6eff;
-    width:fit-content;
-    background-color: #ffd6baff; 
+    background-color: #ffd6baff;
 
 }
 .About-Me {
@@ -41,15 +45,11 @@ div {
 #item1 {
     
     width:10%;
-    padding: 0 20px;
-    margin:20px 0;
     display: flex;
 }
 #item2 {
     border-left: 2px solid #555b6eff;
     width:80%;
-    padding: 0 20px;
-    margin:20px 0;
     display: flex;
 
 }
@@ -57,37 +57,39 @@ div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 90%;
-    padding: 0 20px;
-    row-gap: 10px;
-        }
+
+}
 #boxes {
     display: flex;
     flex-wrap: wrap;
     border-left: 2px solid #555b6eff;
     flex-direction: row;
     width: 90%;
-    padding: 0 20px;
-    row-gap: 10px;
 }
 #item3 {
     width:10%;
-    padding: 0 20px;
-    margin:20px 0;
     display: flex;
 }
 
 .Box1 {
     border: 3px solid black;
-    width: 89%;
-    padding: 0 20px;
-    margin:20px 0 0 10px;
+    width: 80%;
+
 }
+
+.Box1 header {
+    border: 2px solid #555b6eff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: #555b6eff;
+    width:20%;
+}
+
 .Box2, .Box3, .Box4, .Box5 {
     border: 3px solid black;
-    width: 44%;
-    padding: 0 20px;
-    margin:20px 0 0 10px;
+    width: 40%;
+    
 }
 .Contact-Me {
     display:flex;
@@ -96,8 +98,6 @@ div {
 }
 .Contact-Me header {
     width:10%;
-    padding: 0 20px;
-    margin:20px 0;
     display: flex;
 }
 
@@ -108,10 +108,7 @@ div {
 
 .Contact-Me nav {
     border-left: 2px solid #555b6eff;
-    width:80%;
-    padding: 0 20px;
-    margin:20px 0;
-    display: flex;
+    width: 90%;
 }
 
 
