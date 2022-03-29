@@ -39,41 +39,81 @@ div {
     flex-direction: row;
 }
 #item1 {
-    border-right: 2px solid #555b6eff;
+    
     width:10%;
     padding: 0 20px;
     margin:20px 0;
     display: flex;
 }
 #item2 {
+    border-left: 2px solid #555b6eff;
     width:80%;
     padding: 0 20px;
     margin:20px 0;
     display: flex;
 
 }
-.work {
+.Work {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     padding: 0 20px;
-    margin:25px;
-    border-left: 2px solid;
+    row-gap: 10px;
+        }
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 2px solid #555b6eff;
+    flex-direction: row;
+    width: 90%;
+    padding: 0 20px;
+    row-gap: 10px;
+}
+#item3 {
+    width:10%;
+    padding: 0 20px;
+    margin:20px 0;
+    display: flex;
 }
 
 .Box1 {
     border: 3px solid black;
-    width: 90%;
+    width: 89%;
     padding: 0 20px;
-    margin:20px 0;
+    margin:20px 0 0 10px;
 }
 .Box2, .Box3, .Box4, .Box5 {
     border: 3px solid black;
-    width: 40%;
+    width: 44%;
     padding: 0 20px;
-    margin:40px;
+    margin:20px 0 0 10px;
 }
+.Contact-Me {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.Contact-Me header {
+    width:10%;
+    padding: 0 20px;
+    margin:20px 0;
+    display: flex;
+}
+
+.Contact-Me nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.Contact-Me nav {
+    border-left: 2px solid #555b6eff;
+    width:80%;
+    padding: 0 20px;
+    margin:20px 0;
+    display: flex;
+}
+
 
 
 
