@@ -2,62 +2,66 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    color:#faf9f9ff;
 }
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #bee3dbff;
+    background-color: #eeeeee;
 }
-header {
-    height:15vh;
+.Page-Header {
+    height: 80px;
+    background-image: url("pageBanner.jpg");
 }
-main {
-    display: flex;
-    flex-direction: column;
-}
-header h1 {
+
+.Page-Header h1 {
     text-align: left;
+    color: #cccccc;
 }
-header nav li {
+.Page-Header nav {
+    float: right;
+}
+.Page-Header nav li {
     display: inline-block;
     margin-left: 25px;
 }
-header nav {
-    float: right;
+.Page-Header nav li a{
+    color: #cccccc;
 }
 
 #Welcome-Container {
     display: flex;
     justify-content: flex-end;
+    background-color: #979797;
+    height: 30px;
 }
 
-#Welcome {
-    border:1px solid #555b6eff;
-    background-color: #ffd6baff;
-
+main {
+    display: flex;
+    flex-direction: column;
 }
-.About-Me {
+
+.Portfolio-Section {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 20px;
 }
-#item1 {
+
+.Portfolio-Section header {
+    height:150px;
     width:10%;
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
+    color:#555b6eff;
+    margin-left: 20px;
 }
-#item2 {
+
+#About-Me-Desc {
     border-left: 2px solid #555b6eff;
     width:80%;
     display: flex;
-
+    padding:1%;
 }
-.Work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 
-}
 #boxes {
     display: flex;
     flex-wrap: wrap;
@@ -65,62 +69,75 @@ header nav {
     flex-direction: row;
     width: 80%;
 }
-#item3 {
-    width:10%;
-    display: flex;
-    font-size: 30px;
+
+.Box {
+    border: 2px solid black;
+    width: 48%;
+    height:100px;
+    background-color: #808080;
+    position: relative;
+    margin: 1%
+}
+
+.Box header {
+    border: 2px solid #555b6eff;
+    position: relative;
+    color:#cccccc;
+    background-color: #1f2437;
+    width:120px;
+    height:30px;
+    top: 60%;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.Box img {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+.Box img:hover {
+    opacity: 100%;
 }
 
 #Box1 {
-    border: 3px solid black;
     width: 100%;
-
+    height:300px;
 }
 
-#Box1 header {
-    border: 2px solid #555b6eff;
-    text-align: center;
-    position: relative;
-    background-color: #555b6eff;
-    width:20%;
-}
-
-.Box {
-    border: 3px solid black;
-    width: 50%;
-    
-}
-.Contact-Me {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.Contact-Me header {
-    width:10%;
-    display: flex;
-    font-size: 30px;
-}
-
-.Contact-Me nav li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.Contact-Me nav {
+#Contact-Me nav {
     border-left: 2px solid #555b6eff;
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#Contact-Me nav .list-item {
+    list-style-type: none;
+}
+#Contact-Me nav .list-item a{
+    color:#555b6eff;
 }
 
 @media screen and (max-width: 768px) {
-    .About-Me, .Work, .Contact-Me {
+    .Portfolio-Section {
       flex-direction: column;
     }
-    #item2, #boxes, .Contact-Me nav {
+    #About-Me-Desc, #boxes, #Contact-Me nav {
         border-left: 0px;
         border-top: 2px solid #555b6eff;  
     }
     .Box {
         width: 100%;
+    }
+    #Box1 {
+        height:100px;
     }
   }
 

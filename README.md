@@ -1,10 +1,12 @@
 # SCakir
 For this project, I created a portfolio using html and CSS for myself. 
-Used below color palette:
-    /* CSS HEX */
-    --independence: #555b6eff;
-    --morning-blue: #89b0aeff;
-    --powder-blue: #bee3dbff;
-    --cultured: #faf9f9ff;
-    --apricot: #ffd6baff;
+
+In this project, I focused on using Flex containers to create a dynamic/adaptive layout of components. I tried to exercise using various nested flex containers to solidfy my understanding of sizing, layout direction, wrapping and positioning of elements in flex. 
+
+github:
+
+URL:
+
+
+
     
