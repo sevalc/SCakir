@@ -12,7 +12,6 @@ header {
     height:15vh;
 }
 main {
-    min-height: 85vh;
     display: flex;
     flex-direction: column;
 }
@@ -43,9 +42,9 @@ header nav {
     flex-direction: row;
 }
 #item1 {
-    
     width:10%;
     display: flex;
+    font-size: 30px;
 }
 #item2 {
     border-left: 2px solid #555b6eff;
@@ -64,31 +63,31 @@ header nav {
     flex-wrap: wrap;
     border-left: 2px solid #555b6eff;
     flex-direction: row;
-    width: 90%;
+    width: 80%;
 }
 #item3 {
     width:10%;
     display: flex;
+    font-size: 30px;
 }
 
-.Box1 {
+#Box1 {
     border: 3px solid black;
-    width: 80%;
+    width: 100%;
 
 }
 
-.Box1 header {
+#Box1 header {
     border: 2px solid #555b6eff;
     text-align: center;
-    border-radius: 10px;
     position: relative;
     background-color: #555b6eff;
     width:20%;
 }
 
-.Box2, .Box3, .Box4, .Box5 {
+.Box {
     border: 3px solid black;
-    width: 40%;
+    width: 50%;
     
 }
 .Contact-Me {
@@ -99,6 +98,7 @@ header nav {
 .Contact-Me header {
     width:10%;
     display: flex;
+    font-size: 30px;
 }
 
 .Contact-Me nav li {
@@ -108,9 +108,20 @@ header nav {
 
 .Contact-Me nav {
     border-left: 2px solid #555b6eff;
-    width: 90%;
+    width: 80%;
 }
 
-
+@media screen and (max-width: 768px) {
+    .About-Me, .Work, .Contact-Me {
+      flex-direction: column;
+    }
+    #item2, #boxes, .Contact-Me nav {
+        border-left: 0px;
+        border-top: 2px solid #555b6eff;  
+    }
+    .Box {
+        width: 100%;
+    }
+  }
 
 
