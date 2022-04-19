@@ -8,8 +8,8 @@ body {
     background-color: #eeeeee;
 }
 .Page-Header {
-    height: 80px;
-    background-image: url("pageBanner.jpg");
+    height: 120px;
+    background-color: #1f2437;
 }
 
 .Page-Header h1 {
@@ -30,7 +30,7 @@ body {
 #Welcome-Container {
     display: flex;
     justify-content: flex-end;
-    background-color: #979797;
+    background-color: #B4A5A5;
     height: 30px;
 }
 
