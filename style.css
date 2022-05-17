@@ -57,7 +57,7 @@ main {
 
 #About-Me-Desc {
     border-left: 2px solid #555b6eff;
-    width:80%;
+    width:60%;
     display: flex;
     padding:1%;
 }
@@ -67,7 +67,7 @@ main {
     flex-wrap: wrap;
     border-left: 2px solid #555b6eff;
     flex-direction: row;
-    width: 80%;
+    width: 60%;
 }
 
 .Box {
